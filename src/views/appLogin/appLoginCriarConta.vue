@@ -62,7 +62,7 @@ export default {
                 this.sucessos = [];
             },5000);
         },
-        async validaDados() {
+        validaDados() {
             this.erros = [];
 
             if (this.criar.nome.trim() == '') {
@@ -96,7 +96,7 @@ export default {
                 .dispatch("verificaUsuario", this.criar.usuario)
                 .then(response => {
                     if(response != '') {
-                        this.erros.push('Usuário já cadastrado!');
+                        this.erros.push('Usuário já cadastrado.');
                         this.exibeErro();
                     } else {
                         axios.post(process.env.VUE_APP_API_USER + 'users', this.criar)
