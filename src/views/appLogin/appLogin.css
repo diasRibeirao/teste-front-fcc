@@ -1,0 +1,33 @@
+.login {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.login h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+    color: #87f;
+}
+
+.login form {
+    display: grid;
+}
+
+.login .btn {
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login .criar-conta {
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+.login .criar-conta a:hover {
+    color: #87f;
+    text-decoration: underline;
+}
